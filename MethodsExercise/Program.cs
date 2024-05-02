@@ -1,10 +1,23 @@
-﻿namespace MethodsExercise
+﻿using System;
+using System.ComponentModel;
+
+namespace MethodsExercise
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int added = Add(2,4);
+            Console.WriteLine(added);
+
+            int subtracted = subtract(10,3);
+            Console.WriteLine(subtracted);
+
+            int multiplied = multiply(10, 2);
+            Console.WriteLine(multiplied);
+
+            int result = Sum(1, 5, 7, 9);
+            Console.WriteLine(result);
         }
 
         public static void FunSies()
@@ -18,9 +31,49 @@
             Console.WriteLine("What is their best quality?");
             string favQual = Console.ReadLine();
 
-            Console.WriteLine($"Yesterday, I ran into {yourPerson} and they were wearing a hideous {favColor} shirt. The gorss thing is that it was covered in {favFood}. Although {favQual}, they still smelled like {favFood}");
-;        }
+            Console.WriteLine($"Yesterday, I ran into {yourPerson} and they were wearing a hideous {favColor} shirt. The gross thing is that it was covered in {favFood}. Although {favQual}, they still smelled like {favFood}");
+        }
+        
+  
+        public static int Add(int numOne, int numTwo)
+        {
+            return numOne + numTwo;      
+                             
+        }
 
+        public static int subtract(int numOne, int numTwo)
 
+        {
+            return numOne - numTwo;
+
+        }
+        public static int multiply(int numOne, int numTwo)
+        {
+            return numOne * numTwo;
+
+        }
+
+        public static int Sum(params int[] numbers)           
+        {
+            int Sum = 0;
+
+            foreach(int number in numbers) 
+            {
+               Sum = Sum + number
+
+;            }
+
+            return Sum;
+        }
+
+           
+      
+         
+
+        
     }
 }
+
+
+    
+
