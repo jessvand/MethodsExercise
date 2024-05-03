@@ -10,17 +10,17 @@ namespace MethodsExercise
             int added = Add(2,4);
             Console.WriteLine(added);
 
-            int subtracted = subtract(10,3);
+            int subtracted = Subtract(10,3);
             Console.WriteLine(subtracted);
 
-            int multiplied = multiply(10, 2);
+            int multiplied = Multiply(10, 2);
             Console.WriteLine(multiplied);
 
             int result = Sum(1, 5, 7, 9);
             Console.WriteLine(result);
         }
 
-        public static void FunSies()
+        public static void Funsies()
         {
             Console.WriteLine("Who is your favorite person?");
             string yourPerson = Console.ReadLine();
@@ -41,18 +41,18 @@ namespace MethodsExercise
                              
         }
 
-        public static int subtract(int numOne, int numTwo)
+        public static int Subtract(int numOne, int numTwo)
 
         {
             return numOne - numTwo;
 
         }
-        public static int multiply(int numOne, int numTwo)
+        public static int Multiply(int numOne, int numTwo)
         {
             return numOne * numTwo;
 
         }
-
+ 
         public static int Sum(params int[] numbers)           
         {
             int Sum = 0;
